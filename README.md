@@ -597,3 +597,16 @@ npm run fmtr
 # Do both
 npm run fmt
 ```
+
+
+### CORS for chrome 
+OSX: open /Applications/Google\ Chrome.app --args --user-data-dir="/var/tmp/Chrome dev session" --disable-web-security
+Linux: google-chrome --disable-site-isolation-trials --disable-web-security --user-data-dir="~/tmp"
+https://stackoverflow.com/questions/3102819/disable-same-origin-policy-in-chrome
+
+
+
+## Chromdriver tests
+wasm-pack test --chrome --chromedriver ./chromedriver-mac-arm64/chromedriver  --headless
+https://googlechromelabs.github.io/chrome-for-testing/
+

@@ -99,6 +99,8 @@ export default function MessageReceiver() {
       case MainMessageType.LoadContent: {
         const dispatcher = playerInstance.getDispatcher();
         if (dispatcher === null) {
+          // eslint-disable-next-line no-debugger
+          debugger;
           return postUnitializedWorkerError(data.value.contentId);
         }
         const contentInfo: ContentInfo = {
